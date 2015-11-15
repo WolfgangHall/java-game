@@ -53,11 +53,10 @@ h1 {
 }
 
 .start-box {
- border: solid black 1px;
  margin-bottom: 20px;
- height: 100px;
- width: 100px;
- margin-left: 83px;
+ height: auto;
+ width: auto;
+ text-align: center;
  margin-top: 5px;
 }
 
@@ -80,17 +79,16 @@ h1 {
 
 #toggleBtn {
  height: 100px;
- width: 100px;
+ width: 200px;
  color: #18294a;
  background-image: url("http://stivco.com/random/tats/pokeball.gif");
 }
 
 #toggleBtnStop {
- height: 100px;
- width: 100px;
+ height: 100%;
+ width: 100%;
  color: #f0f0f0;
  background-color: #9c3941;
- margin-left: 83px;
  margin-top: 20px;
  margin-bottom: 5px;
 }

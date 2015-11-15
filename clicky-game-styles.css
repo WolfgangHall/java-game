@@ -63,10 +63,10 @@ h1 {
 
 .timer-box {
  background-color: #5a6283;
- font-size: 35px;
+ font-size: 40px;
 }
 
-#timer {
+#countdown {
  text-align: center;
 }
 

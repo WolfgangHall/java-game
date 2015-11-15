@@ -1,25 +1,23 @@
-var clicked = false;
-var sec = 0;
-
-function startClock() {
-    if (clicked === false) {
-        clock = setInterval("stopWatch()", 1000);
-        clicked = true;
+var seconds;
+var temp;
+var toggleBtn = document.getElementById("toggleBtn");
+ 
+  function countdown() {
+    seconds = document.getElementById('countdown').innerHTML;
+    seconds = parseInt(seconds, 10);
+ 
+    if (seconds == 1) {
+      temp = document.getElementById('countdown');
+      temp.innerHTML = "Gotta Catch em' All";
+      alert("time is up");
+      return;
     }
-    else if (clicked === true) {
-    }
-}
-
-function stopWatch() {
-    sec++;
-    document.getElementById("timer").innerHTML = sec;
-}
-
-function stopClock() {
-    window.clearInterval(clock);
-    sec = 0;
-    document.getElementById("timer").innerHTML=0;
-    clicked = false;
-}
-
+ 
+    seconds--;
+    temp = document.getElementById('countdown');
+    temp.innerHTML = seconds;
+    timeoutMyOswego = setTimeout(countdown, 1000);
+  }
+ 
+  toggleBtn.addEventListener("click", countdown);
 

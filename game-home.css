@@ -1,7 +1,18 @@
-h1 {
- color: #18294a;
- margin-left: 10px;
+nav img {
+ height: auto;
+ width: auto;
+ max-width: 100px;
+ max-height: 35px;
 }
+
+nav ul {
+ margin: 10px;
+}
+
+nav li {
+ font-size: 17px;
+}
+
 
 .page-footer {
  margin-top: 15px;
@@ -11,11 +22,13 @@ h1 {
 
 .container-fluid {
  background-color: #394162;
+ color: #ff8329;
+
 }
 
-.page-header {
- background-color: #E9967A;
- border: solid black 1px;
+h1 {
+ font-size: 55px;
+ text-align: center;
 }
 
 .pic-box {
@@ -23,6 +36,7 @@ h1 {
  margin: 10px;
  height: 175px;
  background-color: #696969;
+ text-align: center;
 }
 
 .start-box {
@@ -42,13 +56,28 @@ h1 {
  width: 200px;
 }
 
-img {
+.start-box img {
  height: auto;
  width: auto;
- max-width: 165px;
- max-height: 165px;
- padding-left: 15px;
+ max-width: 200px;
+ max-height: 100px;
+}
+
+.timer-box img {
+ 
+ max-width: 100%;
+ max-height: 100%;
+ width: auto;
+ height: auto;
+}
+
+.pic-box img {
+ height: auto;
+ width: auto;
+ max-width: 100%;
+ max-height: 100%;
  padding-top: 10px;
+ padding-bottom: 5px;
 }
 
 #start-button {
@@ -57,6 +86,15 @@ img {
  color: #18294a;
  color: white;
 }
+
+a {
+ text-decoration: none;
+ color: #7383a4;
+}
+
+
+
+
 
 
 

@@ -2,7 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="game-home.css">
+<link rel="stylesheet" type="text/css" href="clicky-game-styles.css">
  <title>Java Game</title>
 </head>
 
@@ -24,7 +24,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="banner">
-           <h1>Catch all of the pokemon before the 20 second timer runs out</h1>
+           <h1>Catch all of the pokemon before the 20 second timer runs out <small>Click the pokeball to begin</small></h1> 
+
         </div>
       </div>
     </div>
@@ -33,7 +34,7 @@
      
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3" id="time-column">
           <aside class="start-box">
             <button type="submit" class="btn btn-primary btn-lg" id="toggleBtn" onclick="startClock()"></button>
           </aside>
@@ -41,6 +42,11 @@
           <div class="timer-box">
             <div id="timer">0</div>
           </div>
+
+          <aside class="stop-box">
+            <button type="submit" class="btn btn-primary btn-lg" id="toggleBtnStop" onclick="stopClock()">Stop<br /> & <br />reset</button>
+          </aside>
+
         
         </div>
 
@@ -148,7 +154,7 @@
 </div>
 
 
-<script type="text/javascript" src="game-home.js"></script>
+<script type="text/javascript" src="clicky-game-timing.js"></script>
 </body>
 
 

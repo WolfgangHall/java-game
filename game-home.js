@@ -1,31 +1,23 @@
-var secondsCount = 0;
-var timerInterval;
-var toggleBtn = document.getElementById("toggleBtn");
+var clicked = false;
+var sec = 0;
 
-setTimeout(function() {
-  if(secondsCount === 0) {
-    clearInterval(timerInterval);
-    toggleBtn.parentNode.removeChild(toggleBtn);
-    alert("You need to play fast!");
-  }
-}, 30000);
-
-function addSeconds () {
-  secondsCount++;
+function startClock() {
+    if (clicked === false) {
+        clock = setInterval("stopWatch()", 1000);
+        clicked = true;
+    }
+    else if (clicked === true) {
+    }
 }
 
-function toggleTime() {
-  if(this.getAttribute("data-state") === "start") {
-    this.innerHTML = "Stop";
-    this.setAttribute("data-state", "stop");
-    secondsCount = 0;
-    timerInterval = setInterval(addSeconds, 1000);
-  } else {
-    this.innerHTML = "Start";
-    this.setAttribute("data-state", "start");
-    clearInterval(timerInterval);
-    alert("That lasted " + secondsCount + " seconds");
-  }
+function stopWatch() {
+    sec++;
+    document.getElementById("timer").innerHTML = sec;
 }
 
-toggleBtn.addEventListener("click", toggleTime);
+function stopClock() {
+    window.clearInterval(clock);
+    sec = 0;
+    document.getElementById("timer").innerHTML=0;
+    clicked = false;
+}

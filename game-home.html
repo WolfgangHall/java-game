@@ -35,16 +35,18 @@
       <div class="row">
         <div class="col-md-3">
           <aside class="start-box">
-            <button type="button" class="btn btn-primary btn-lg" id="start-button">Begin Game</button>
+            <button type="submit" class="btn btn-primary btn-lg" id="toggleBtn" onclick="startClock()"></button>
           </aside>
-          <aside class="timer-box">
-            2
-          </aside>
+          
+          <div class="timer-box">
+            <div id="timer">0</div>
+          </div>
+        
         </div>
 
         <div class="col-md-9">
           <div class="col-md-3">
-            <div class="pic-box"><img src="http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png"></div>
+            <div class="pic-box"><img src="http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png" class="img-rounded"></div>
           </div>
 
           <div class="col-md-3">

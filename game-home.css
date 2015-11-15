@@ -40,20 +40,20 @@ h1 {
 }
 
 .start-box {
- background-color: #E9967A;
  border: solid black 1px;
- margin-top: 4px;
  margin-bottom: 20px;
  height: 100px;
- width: 200px;
+ width: 100px;
+ margin-left: 83px;
 }
 
 .timer-box {
- background-color: #E9967A;
- border: solid black 1px;
- margin-top: 4px;
- height: 100px;
- width: 200px;
+ background-color: #5a6283;
+ font-size: 25px;
+}
+
+#timer {
+ text-align: center;
 }
 
 .start-box img {
@@ -79,11 +79,11 @@ h1 {
  padding: 10px;
 }
 
-#start-button {
- margin-top: 25px;
- margin-left: 30px;
+#toggleBtn {
+ height: 100px;
+ width: 100px;
  color: #18294a;
- color: white;
+ background-image: url("http://stivco.com/random/tats/pokeball.gif");
 }
 
 a {

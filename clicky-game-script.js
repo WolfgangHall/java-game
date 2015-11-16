@@ -21,5 +21,32 @@ var clicks = 0;
 function onClick() {
  clicks += 1;
  document.getElementById("click-counter").innerHTML = clicks;
+
+ if (clicks === 20) {
+  document.getElementById('countdown').innerHTML = "You're a great trainer!"
+  clearInterval(timer);
+  alert("You've caught 20 pokemon in" + secondsLeft + " seconds!");
+  };
 };
+
+var clicks = 0;
+function resetClock() {
+  clearInterval(timer);
+  document.getElementById('countdown').innerHTML=20;
+}
+
+
+var clicks = 0;
+function resetClicks() {
+ 
+}
+
+function play () {
+  document.getElementById("audio").play();
+}
+
+
+
+  
+
 

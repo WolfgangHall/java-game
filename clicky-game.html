@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="clicky-game-styles.css">
  <title>Java Game</title>
-
  
 </head>
 
@@ -16,7 +15,7 @@
 <nav>
   <ul class="nav nav-tabs">
     <a href="#" class="pull-left"><img src="http://vignette1.wikia.nocookie.net/nintendo/images/e/e6/Pokemon_Logo.png/revision/latest?cb=20100831014812&path-prefix=en"></a>
-    <li role="presentation"><a href="#">Home</a></li>
+    <li role="presentation"><a href="https://fast-crag-1900.herokuapp.com/">Home</a></li>
     <li role="presentation"><a href="#">Profile</a></li>
     <li role="presentation"><a href="#">Contact</a></li>
   </ul>
@@ -48,7 +47,7 @@
           </div>
 
           <aside class="stop-box">
-            <a href="https://fast-crag-1900.herokuapp.com/"><button type="submit" class="btn btn-primary btn-lg" id="toggleBtnStop" onclick="stopClock()">Reset</button></a>
+            <button type="submit" class="btn btn-primary btn-lg" id="toggleBtnStop" onclick="resetClock()">Reset Time</button>
           </aside>
 
 
@@ -56,6 +55,13 @@
             <h5>clicks:</h5>
             <div id="click-counter">0</div>
           </div>
+
+          <div class="music-box">
+            <button type="button" class="btn btn-warning" id="musicBtn" value="PLAY" onclick="play()">Need Motivation?</button>
+          </div>
+
+          <audio id="audio" src="PokemonTVThemeSongFull.mp3"></audio>
+          
 
         
         </div>
@@ -173,3 +179,4 @@
 
 
 </html>
+            

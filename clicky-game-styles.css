@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+body {
+ font-style: 'PT+Sans';
+}
+
 nav img {
  height: auto;
  width: auto;
@@ -86,9 +92,17 @@ h1 {
  height: auto;
 }
 
+.music-box {
+ text-align: center;
+}
+
+#musicBtn {
+margin-bottom: 20px;
+}
+
 #toggleBtn {
  height: 100px;
- width: 200px;
+ width: 100px;
  color: #18294a;
  background-image: url("http://stivco.com/random/tats/pokeball.gif");
 }

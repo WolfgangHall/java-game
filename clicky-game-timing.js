@@ -8,8 +8,8 @@ function startClock () {
     if (secondsLeft <= 0)
     {
       document.getElementById('countdown').innerHTML = "Gotta catch em' all!";
-      alert('The time is up');
-      clearInterval(interval);
+      clearInterval(timer);
+      alert('The time is up'); // alert is now here!
     }
   }, 1000);
 };

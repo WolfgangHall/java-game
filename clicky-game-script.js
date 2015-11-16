@@ -14,7 +14,8 @@ function startClock () {
   }, 1000);
 };
 
-
+//if you hit the start button once, the function works fine
+//if you hit the start button more than once, the alert window begins to spaz out
 
 var clicks = 0;
 function onClick() {

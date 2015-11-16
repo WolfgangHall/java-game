@@ -10,6 +10,8 @@ var toggleBtn = document.getElementById("toggleBtn");
       temp = document.getElementById('countdown');
       temp.innerHTML = "Gotta Catch em' All";
       alert("time is up");
+
+
       return;
     }
  
@@ -20,4 +22,6 @@ var toggleBtn = document.getElementById("toggleBtn");
   }
  
   toggleBtn.addEventListener("click", countdown);
+
+  clearInterval('timer');
 

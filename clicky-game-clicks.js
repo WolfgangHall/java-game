@@ -1,11 +1,5 @@
-function incrementIndex() {
- index += 1;
-} 
-
-var addEvent = window.addEventListener ? function (elem, type, method) {
- elem.addEventListener(type, method, false);
-} : function (elem, type, method) {
- elem.attachEvent('on' + type, method);
-};
-
-addEvent(poke-pic[0], 'click', incrementIndex);
+var pokemon =
+document.getElementsByClassName("poke-pic");
+for (var 1=0; i<poke-pic.length;i++) {
+ pokemon[i].addEventListener('click', )
+}

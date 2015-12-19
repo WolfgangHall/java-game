@@ -1,3 +1,7 @@
+
+// add jquery
+
+
 var timer, secondsLeft;
 
 function startClock () {
@@ -44,7 +48,6 @@ function resetClicks() {
 function play () {
   document.getElementById("audio").play();
 }
-
 
 
   

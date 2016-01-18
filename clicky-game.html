@@ -1,182 +1,215 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="clicky-game-styles.css">
- <title>Java Game</title>
- 
-</head>
-
-<body>
-
-
-<div class="container-fluid">
-
-<nav>
-  <ul class="nav nav-tabs">
-    <a href="#" class="pull-left"><img src="http://vignette1.wikia.nocookie.net/nintendo/images/e/e6/Pokemon_Logo.png/revision/latest?cb=20100831014812&path-prefix=en"></a>
-    <li role="presentation"><a href="https://fast-crag-1900.herokuapp.com/">Home</a></li>
-    <li role="presentation"><a href="#">Profile</a></li>
-    <li role="presentation"><a href="#">Contact</a></li>
-  </ul>
-</nav>
-
-  <section class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="banner">
-           <h1>Catch all of the pokemon before the 20 second timer runs out <small>Click the pokeball to begin</small></h1> 
-
-        </div>
-      </div>
-    </div>
-  </section>
-       
-     
+  <head>
+    <link crossorigin="anonymous" href=
+    "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    rel="stylesheet">
+    <link href="clicky-game-styles.css" rel="stylesheet" type="text/css">
+    <title>
+      Java Game
+    </title>
+  </head>
+  <body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-3" id="time-column">
-          <aside class="start-box">
-            <button type="submit" class="btn btn-primary btn-lg" id="toggleBtn" onclick="startClock()"></button>
-          </aside>
-          
-          <div class="timer-box">
-            <h5>timer:</h5>
-            <div id="countdown"></div>
-
+      <nav>
+        <ul class="nav nav-tabs">
+          <li>
+            <a class="pull-left" href="#"><img alt="Pokemon" src=
+            "http://vignette1.wikia.nocookie.net/nintendo/images/e/e6/Pokemon_Logo.png/revision/latest?cb=20100831014812&path-prefix=en"></a>
+          </li>
+          <li role="presentation">
+            <a href="https://fast-crag-1900.herokuapp.com/">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Profile</a>
+          </li>
+          <li role="presentation">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="banner">
+              <h1>
+                Catch all of the pokemon before the 20 second timer runs out
+                <small>Click the pokeball to begin</small>
+              </h1>
+            </div>
           </div>
-
-          <aside class="stop-box">
-            <button type="submit" class="btn btn-primary btn-lg" id="toggleBtnStop" onclick="resetClock()">Reset Time</button>
-          </aside>
-
-
-          <div class="clicks-box">
-            <h5>clicks:</h5>
-            <div id="click-counter">0</div>
-          </div>
-
-          <div class="music-box">
-            <button type="button" class="btn btn-warning" id="musicBtn" value="PLAY" onclick="play()">Need Motivation?</button>
-          </div>
-
-          <audio id="audio" src="clicky-game-motivation.mp3"></audio>
-          
-
-        
         </div>
-
-        <div class="col-md-9">
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png" class="img-rounded"></div>
+      </section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3" id="time-column">
+            <aside class="start-box">
+              <button class="btn btn-primary btn-lg" id="toggleBtn" type=
+              "submit"></button>
+            </aside>
+            <div class="timer-box">
+              <h5>
+                timer:
+              </h5>
+              <div id="countdown">Ready?</div>
+            </div>
+            <aside class="stop-box">
+              <button class="btn btn-primary btn-lg" id="toggleBtnStop" type=
+              "submit">Reset Time</button>
+            </aside>
+            <div class="clicks-box">
+              <h5>
+                clicks:
+              </h5>
+              <div id="click-counter">
+                0
+              </div>
+            </div>
+            <div class="music-box">
+              <button class="btn btn-warning" id="musicBtn" type="button"
+              >Need Motivation?</button>
+            </div><audio id="audio"></audio>
           </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png"></div>
+          <div class="col-md-9">
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Charmander" class="img-rounded"                 src=
+                "http://cdn.bulbagarden.net/upload/thumb/7/73/004Charmander.png/250px-004Charmander.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Pikachu" src=
+                "http://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Squirtle" src=
+                "http://cdn.bulbagarden.net/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Abra" src=
+                "http://cdn.bulbagarden.net/upload/thumb/6/62/063Abra.png/250px-063Abra.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Mew" src=
+                "http://cdn.bulbagarden.net/upload/thumb/b/b1/151Mew.png/250px-151Mew.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Vulpix" src=
+                "http://cdn.bulbagarden.net/upload/thumb/6/60/037Vulpix.png/250px-037Vulpix.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Charizard" src=
+                "http://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Growlithe" src=
+                "http://cdn.bulbagarden.net/upload/thumb/3/3d/058Growlithe.png/250px-058Growlithe.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Eevee" src=
+                "http://cdn.bulbagarden.net/upload/thumb/e/e2/133Eevee.png/250px-133Eevee.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Pidgeotto" src=
+                "http://cdn.bulbagarden.net/upload/thumb/7/7a/017Pidgeotto.png/250px-017Pidgeotto.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Dratini" src=
+                "http://cdn.bulbagarden.net/upload/thumb/c/cc/147Dratini.png/250px-147Dratini.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Magikarp" src=
+                "http://cdn.bulbagarden.net/upload/thumb/0/02/129Magikarp.png/250px-129Magikarp.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Meowth" src=
+                "http://cdn.bulbagarden.net/upload/thumb/d/d6/052Meowth.png/250px-052Meowth.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Haunter" src=
+                "http://cdn.bulbagarden.net/upload/thumb/6/62/093Haunter.png/250px-093Haunter.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Machoke" src=
+                "http://cdn.bulbagarden.net/upload/thumb/8/8e/067Machoke.png/250px-067Machoke.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Blastoise" src=
+                "http://cdn.bulbagarden.net/upload/thumb/0/02/009Blastoise.png/250px-009Blastoise.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Ninetales" src=
+                "http://cdn.bulbagarden.net/upload/thumb/0/05/038Ninetales.png/250px-038Ninetales.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Slowpoke" src=
+                "http://cdn.bulbagarden.net/upload/thumb/7/70/079Slowpoke.png/250px-079Slowpoke.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Geodude" src=
+                "http://cdn.bulbagarden.net/upload/thumb/9/98/074Geodude.png/250px-074Geodude.png">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="pic-box">
+                <img alt="Hitmonchan" src=
+                "http://cdn.bulbagarden.net/upload/thumb/a/a3/107Hitmonchan.png/250px-107Hitmonchan.png">
+              </div>
+            </div>
           </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/3/39/007Squirtle.png/250px-007Squirtle.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/6/62/063Abra.png/250px-063Abra.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/b/b1/151Mew.png/250px-151Mew.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/6/60/037Vulpix.png/250px-037Vulpix.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/7/7e/006Charizard.png/250px-006Charizard.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/3/3d/058Growlithe.png/250px-058Growlithe.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/e/e2/133Eevee.png/250px-133Eevee.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/7/7a/017Pidgeotto.png/250px-017Pidgeotto.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/c/cc/147Dratini.png/250px-147Dratini.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/0/02/129Magikarp.png/250px-129Magikarp.png"></div>
-          </div> 
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/d/d6/052Meowth.png/250px-052Meowth.png"></div>
-          </div>
-          
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/6/62/093Haunter.png/250px-093Haunter.png"></div>
-          </div>
-          
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/8/8e/067Machoke.png/250px-067Machoke.png"></div>
-          </div>
-          
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/0/02/009Blastoise.png/250px-009Blastoise.png"></div>
-          </div>
-          
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/0/05/038Ninetales.png/250px-038Ninetales.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/7/70/079Slowpoke.png/250px-079Slowpoke.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/9/98/074Geodude.png/250px-074Geodude.png"></div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="pic-box"><img type="button" onClick="onClick()" src="http://cdn.bulbagarden.net/upload/thumb/a/a3/107Hitmonchan.png/250px-107Hitmonchan.png"></div>
-          </div>
-          
         </div>
       </div>
+      <footer class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-footer">
+              <p>
+                &copy; Wolfgang Hall 2015
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-        
-          
-        
-  <footer class="container">
-    <div class="row">
-      <div class="col-md-12">
-         <div class="page-footer">
-          <p> &copy; Wolfgang Hall     2015</p>
-         </div>
-      </div>
-     
-    </div>
-    
-  </footer>
-
-
-
-</div>
-
-
-<script type="text/javascript" src="clicky-game-script.js"></script>
-
-
-</body>
-
-
-
-
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type=
+    "text/javascript">
+    </script>
+    <script src="clicky-game-script.js" type="text/javascript">
+    </script> 
+  </body>
 </html>
-            

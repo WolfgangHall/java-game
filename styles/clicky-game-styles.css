@@ -20,6 +20,9 @@ nav li {
 
 }
 
+.bordered {
+ border-width: 20px;
+}
 
 .page-footer {
  margin-top: 15px;
@@ -103,7 +106,7 @@ margin-bottom: 20px;
  background-image: url("http://stivco.com/random/tats/pokeball.gif");
 }
 
-#toggleBtnStop {
+#resetBtn {
  height: 100%;
  width: 100%;
  color: #f0f0f0;

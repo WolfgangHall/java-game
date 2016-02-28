@@ -18,6 +18,9 @@ nav li {
 
 }
 
+.on {
+ border: 1px black solid;
+}
 
 .page-footer {
  margin-top: 15px;
@@ -36,7 +39,7 @@ h1 {
  text-align: center;
 }
 
-.pic-box {
+#pic-box {
  border: solid black 4px;
  margin: 5px;
  height: 175px;
@@ -44,7 +47,7 @@ h1 {
  text-align: center;
 }
 
-.pic-box img {
+#pic-box img {
  height: auto;
  width: auto;
  max-width: 100%;

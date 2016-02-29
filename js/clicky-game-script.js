@@ -1,41 +1,37 @@
 
 $( document ).ready(function() {
 
-  var timer; 
-  var secondsLeft === 0;
-  var clicks === 0;
+  var timer;
+  var secondsLeft = 0;
+  var clicks = 0;
 
-  function play () {
-    $("#audio").play();
-  }
+
 
   $('#musicBtn').on("click", function(){
-    play();
-  });
-
-  $('#resetBtn').on("click", function(){
-clearInterval(timer);
-    secondsLeft === 0;
-    $('#countdown').html(secondsLeft);
-        clicks === 0;
-    $('click-counter').html(clicks);
+    $("#audio").play();
   });
 
   $("#toggleBtn").on( "click", function() {
-
-    function startClock () {
       secondsLeft = 20;
       secondsLeft--;
       timer = setInterval(function() {
         $('#countdown') = --secondsLeft;
 
         if (secondsLeft <= 0) {
-          $('#countdown') = "Gotta catch em' all!";
+          $('#countdown').html("Gotta catch em' all!");
           clearInterval(timer);
           alert('The time is up'); // alert is now here!
         }
       }, 1000);
     };
+
+  $('#resetBtn').on("click", function(){
+    clearInterval(timer);
+    secondsLeft = 0;
+    $('#countdown').html(secondsLeft);
+        clicks = 0;
+    $('click-counter').html(clicks);
+  });
 
 
     $(".pokephoto").on( "click", function() {

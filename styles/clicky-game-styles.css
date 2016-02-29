@@ -20,9 +20,11 @@ nav li {
 
 }
 
-.bordered {
- border-width: 20px;
+.opaque {
+    opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
 }
+
 
 .page-footer {
  margin-top: 15px;

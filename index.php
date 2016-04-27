@@ -1,1 +1,1 @@
-<?php require('clicky-game.html'); ?>
+<?php require 'clicky-game.html' ;?>
